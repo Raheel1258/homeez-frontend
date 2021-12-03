@@ -1,28 +1,31 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router";
-import { submitQoute } from "../../api/actions/qoutes";
+
+import { useToasts } from 'react-toast-notifications';
+import { submitQuote } from "../../api/actions/quotes";
+
 import HomeScreen from "../../Screens/HomeScreen";
 
 
 const HomeContainer = () => {
 
-  const [qoute , setQoute ] = useState({
-    info:''
+  const { addToast } = useToasts();
+  const [quote, setQuote] = useState({
+    info: ''
   });
-    const navigate = useNavigate();
- 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        submitQoute(qoute);
-    }
+  const navigate = useNavigate();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    submitQuote(quote, addToast);
+  }
 
-    const handleChange = (e) => {
-        setQoute({info:e});
-    }
-    
+  const handleChange = (e) => {
+    setQuote({ info: e });
+  }
+
   return (
     <div>
-      <HomeScreen handleSubmit={handleSubmit} handleChange={handleChange} navigate={navigate}/>
+      <HomeScreen handleSubmit={handleSubmit} handleChange={handleChange} navigate={navigate} />
     </div>
   );
 };

@@ -1,23 +1,23 @@
-import React, {useEffect , useState} from "react";
-import { getAllQoute } from "../../api/actions/qoutes";
+import React, { useEffect, useState } from "react";
+
+import { getAllQuotes } from "../../api/actions/quotes";
 import QuotesScreen from "../../Screens/QuotesScreen";
 
 const QuotesContainer = () => {
 
-  const [allQoute , setAllQoute] = useState('');
+  const [allQuote, setAllQuote] = useState('');
 
-  const handleAllQoute = (res) => {
-    setAllQoute(res);
-
+  const handleAllQuote = (res) => {
+    setAllQuote(res);
   }
 
-  useEffect(()=> {
-    getAllQoute(handleAllQoute);
-  },[])
+  useEffect(() => {
+    getAllQuotes(handleAllQuote);
+  }, [])
 
   return (
     <div>
-      <QuotesScreen allQoute={allQoute}/>
+      <QuotesScreen allQuote={allQuote} />
     </div>
   );
 };

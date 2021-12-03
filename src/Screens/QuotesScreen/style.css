@@ -17,9 +17,11 @@ margin: 0;
 -moz-box-shadow: 0px 7px 16px 0px rgba(0,0,0,0.51);
 }
 .quotes-container{
-    width: 40%;
-    height: 90vh;
+    width: 40%;  
+    height: auto;
     border-radius: 5px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
     box-shadow: 0px 7px 16px 0px rgba(0,0,0,0.51);
     -webkit-box-shadow: 0px 7px 16px 0px rgba(0,0,0,0.51);
     -moz-box-shadow: 0px 7px 16px 0px rgba(0,0,0,0.51);
