@@ -14,7 +14,6 @@ const HomeContainer = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         submitQoute(qoute);
-
     }
 
     const handleChange = (e) => {
