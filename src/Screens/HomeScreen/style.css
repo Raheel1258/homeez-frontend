@@ -1,0 +1,62 @@
+.homeez-heading{
+  background: #788CCF;
+  background: -webkit-linear-gradient(to right, #788CCF 36%, #7CCF82 63%);
+  background: -moz-linear-gradient(to right, #788CCF 36%, #7CCF82 63%);
+  background: linear-gradient(to right, #788CCF 36%, #7CCF82 63%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-size: 80px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 30px;
+}
+.text-area-input{
+    margin-top: 40px;
+    width: 40%;
+    align-self: center;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 5px;
+    border-bottom: 2px solid red;
+    
+}
+.text-area-input:focus{
+  border-bottom: 2px solid red;
+    outline: none;
+}
+.button-container{
+  justify-content: center;
+  display: flex;
+  margin-top: 70px;
+}
+.submit-button{
+    background: linear-gradient(to right, #DC2424 0%, #4A569D  51%, #DC2424  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    border: none;
+    }
+.submit-button:hover{
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+  }
+  ::placeholder{
+    font-size: 30px;
+  }
+
+.all-quotes{
+  text-align: right;
+  width: 70%;
+  font-size: 16px;
+  color: red;
+  cursor: pointer;
+}
