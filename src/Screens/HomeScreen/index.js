@@ -1,18 +1,22 @@
 import React from "react";
-
 import "./style.css";
 
-const HomeScreen = () => {
+const HomeScreen = ({handleSubmit , handleChange , navigate}) => {
+
+    
+    
     return (
         <div className="container ">
             <div className="homeez-heading">
                 HOMEEEZ
             </div>
-            <textarea className="text-area-input" tabIndex="1" rows="2" cols="50" placeholder="Enter Your Quote..."/>
-            <div  className="all-quotes">See All Quotes</div>
+            <form onSubmit={handleSubmit}>
+            <textarea className="text-area-input" name='qoute' onChange={(e)=>handleChange(e.currentTarget.value)} tabIndex="1" rows="2" cols="50" placeholder="Enter Your Quote..."/>
+            <div  className="all-quotes" onClick={()=>(navigate('/qoutes'))}>See All Quotes</div>
             <div className="button-container">
-                <button className="submit-button">Submit</button>
+                <button type='submit' className="submit-button" >Submit</button>
             </div>
+            </form>
         </div>
     );
 };
