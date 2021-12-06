@@ -10,9 +10,9 @@ const HomeScreen = ({ handleSubmit, handleChange, navigate }) => {
       </div>
       <form onSubmit={handleSubmit}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%' }} >
-          <textarea className="text-area-input" name='qoute' onChange={(e) => handleChange(e.currentTarget.value)} tabIndex="1" rows="2" cols="50" placeholder="Enter Your Quote..." />
+          <textarea className="text-area-input" name='quote' onChange={(e) => handleChange(e.currentTarget.value)} tabIndex="1" rows="2" cols="50" placeholder="Enter Your Quote..." />
         </div>
-        <div className="all-quotes" onClick={() => (navigate('/qoutes'))}>See All Quotes</div>
+        <div className="all-quotes" onClick={() => (navigate('/quotes'))}>See All Quotes</div>
         <div className="button-container">
           <button type='submit' className="submit-button" >Submit</button>
         </div>

@@ -1,21 +1,21 @@
 
-import {BrowserRouter , Routes , Route} from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css';
 
-import { HomeContainer,QuotesContainer } from './Containers';
+import { HomeContainer, QuotesContainer } from './Containers';
 
 
 function App() {
   return (
     // <div className="App">
-      <BrowserRouter>
+    <BrowserRouter>
       <Routes>
-        <Route exact path='/' element={<HomeContainer/>}/>
-        <Route exact path='/qoutes' element={<QuotesContainer/>}/>
-        </Routes>
-        </BrowserRouter>
-  
-   
+        <Route exact path='/' element={<HomeContainer />} />
+        <Route exact path='/quotes' element={<QuotesContainer />} />
+      </Routes>
+    </BrowserRouter>
+
+
     // </div>
   );
 }

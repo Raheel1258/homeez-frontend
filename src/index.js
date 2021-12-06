@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { ToastProvider } from 'react-toast-notifications';
+
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { ToastProvider } from 'react-toast-notifications';
 
 ReactDOM.render(
   <ToastProvider autoDismiss={true} autoDismissTimeout={2000} PlacementType="bottom-right">
